@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Malaria predition</title>
+    <link rel="stylesheet" href="../static/css/style.css"">
+</head>
+<body>
+<center>
+      <h1>Malaria predition</h1>
+<form action="./predict" method="POST">
+    <table>
+        <tr>
+       <td>
+         <label for="avgHumidity">Avg Humidity</label>
+       </td>
+       <td>:</td>
+       <td>
+         <input type ="number" name="avgHumidity" placeholder="Enter avg humidity"/>
+       </td>
+      </tr>
+     <tr>
+       <td>
+          <label for="Rainfall">Rainfall</label>
+       </td>
+       <td>:</td>
+       <td>
+           <input type ="number" name="Rainfall" placeholder="Enter rainfall"/>
+       </td>
+     </tr>
+        <tr>
+            <td>
+          <label for="positive">Positive</label>
+       </td>
+       <td>:</td>
+       <td>
+           <input type ="number" name="positive" placeholder="Enter positive"/>
+       </td>
+        </tr>
+        <tr>
+        <td>
+          <label for="pf">pf</label>
+       </td>
+       <td>:</td>
+       <td>
+           <input type ="number" name="pf" placeholder="Enter pf"/>
+       </td>
+        </tr>
+        <tr>
+            <td colspan="3"><input id="btn" type="submit" value="Predict" /></td>
+        </tr>
+    </table>
+    <p>Prediction:{{pred}}</p>
+</form>
+</center>
+</body>
+</html>
